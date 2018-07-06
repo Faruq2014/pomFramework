@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="facebook.Listeners"/>
+  </listeners>
+  <test name="validation(failed)">
+    <classes>
+      <class name="facebook.HomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- facebook.HomePage -->
+      <class name="facebook.LogInTest">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- facebook.LogInTest -->
+      <class name="facebook.ValidateTitleTest">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+          <include name="Validatefcebook"/>
+        </methods>
+      </class> <!-- facebook.ValidateTitleTest -->
+    </classes>
+  </test> <!-- validation(failed) -->
+</suite> <!-- Failed suite [Suite] -->

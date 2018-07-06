@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50430" started-at="2018-07-06T21:43:50Z" finished-at="2018-07-06T21:44:40Z">
+    <groups>
+    </groups>
+    <test name="validation" duration-ms="14971" started-at="2018-07-06T21:43:50Z" finished-at="2018-07-06T21:44:05Z">
+      <class name="facebook.ValidateTitleTest">
+        <test-method status="PASS" signature="intialize()[pri:0, instance:facebook.ValidateTitleTest@1190200a]" name="intialize" is-config="true" duration-ms="12793" started-at="2018-07-06T17:43:50Z" finished-at="2018-07-06T17:44:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method status="PASS" signature="Validatefcebook()[pri:0, instance:facebook.ValidateTitleTest@1190200a]" name="Validatefcebook" duration-ms="71" started-at="2018-07-06T17:44:03Z" finished-at="2018-07-06T17:44:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validatefcebook -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:facebook.ValidateTitleTest@1190200a]" name="teardown" is-config="true" duration-ms="2096" started-at="2018-07-06T17:44:03Z" finished-at="2018-07-06T17:44:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- facebook.ValidateTitleTest -->
+    </test> <!-- validation -->
+    <test name="Login" duration-ms="24057" started-at="2018-07-06T21:44:05Z" finished-at="2018-07-06T21:44:29Z">
+      <class name="facebook.LogInTest">
+        <test-method status="PASS" signature="intialize()[pri:0, instance:facebook.LogInTest@10d68fcd]" name="intialize" is-config="true" duration-ms="3837" started-at="2018-07-06T17:44:05Z" finished-at="2018-07-06T17:44:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method status="PASS" signature="DoLogIn(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:facebook.LogInTest@10d68fcd]" name="DoLogIn" duration-ms="14157" started-at="2018-07-06T17:44:09Z" data-provider="getData" finished-at="2018-07-06T17:44:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[khaled@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[for khaled facebook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoLogIn -->
+        <test-method status="PASS" signature="DoLogIn(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:facebook.LogInTest@10d68fcd]" name="DoLogIn" duration-ms="3957" started-at="2018-07-06T17:44:23Z" data-provider="getData" finished-at="2018-07-06T17:44:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[forid@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[for forid facebook]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoLogIn -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:facebook.LogInTest@10d68fcd]" name="teardown" is-config="true" duration-ms="2104" started-at="2018-07-06T17:44:27Z" finished-at="2018-07-06T17:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- facebook.LogInTest -->
+    </test> <!-- Login -->
+    <test name="HomePage" duration-ms="11270" started-at="2018-07-06T21:44:29Z" finished-at="2018-07-06T21:44:40Z">
+      <class name="facebook.HomePage">
+        <test-method status="PASS" signature="intialize()[pri:0, instance:facebook.HomePage@15ca7889]" name="intialize" is-config="true" duration-ms="9155" started-at="2018-07-06T17:44:29Z" finished-at="2018-07-06T17:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intialize -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:facebook.HomePage@15ca7889]" name="basePageNavigation" duration-ms="21" started-at="2018-07-06T17:44:38Z" finished-at="2018-07-06T17:44:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:facebook.HomePage@15ca7889]" name="teardown" is-config="true" duration-ms="2093" started-at="2018-07-06T17:44:38Z" finished-at="2018-07-06T17:44:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- facebook.HomePage -->
+    </test> <!-- HomePage -->
+  </suite> <!-- Suite -->
+</testng-results>
