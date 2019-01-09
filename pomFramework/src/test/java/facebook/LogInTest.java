@@ -22,6 +22,7 @@ public class LogInTest extends base {
 		log.info("driver intialized for login test");
 	}
 	
+	
 	@Test(dataProvider="getData")
 	
 	public void DoLogIn(String username, String password, String text) throws IOException {

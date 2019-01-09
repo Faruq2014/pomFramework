@@ -33,10 +33,10 @@ public class ValidateTitleTest extends base{
 	Assert.assertTrue(v.Display().isDisplayed());
 	log.info("validated the home page");
 	
-	/*v.Test();
+	v.Test();
 	Assert.assertEquals(v.Test(), "Connect with friends and the\r\n" + 
 			"world around you on Facebook.");
-	*/
+	
 	
 	String expectedtitle= driver.getTitle();
 	String actualtitle = "Facebook - Log In or Sign Up";

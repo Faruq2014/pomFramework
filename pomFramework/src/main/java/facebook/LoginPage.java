@@ -12,6 +12,7 @@ public class LoginPage {
 	}
 	
 	By email= By.id("email");
+	
 	By password = By.id("pass");
 	By login = By.xpath("//input[contains(@id,'u_0')]");
 	

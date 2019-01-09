@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="facebook.ValidateTitleTest">
+      <class name="facebook.HomePage">
         <methods>
           <include name="intialize"/>
-          <include name="teardown"/>
-          <include name="Validatefcebook"/>
+          <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- facebook.ValidateTitleTest -->
+      </class> <!-- facebook.HomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

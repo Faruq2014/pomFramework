@@ -1,0 +1,6 @@
+07.10.2018 19:37:28.695 [main] INFO  resources.base - driver is intialized for validation title page
+07.10.2018 19:37:34.731 [main] INFO  resources.base - facebook is opening
+07.10.2018 19:37:34.832 [main] INFO  resources.base - validated the home page
+07.10.2018 19:37:37.394 [main] INFO  resources.base - done with validation page
+07.10.2018 20:19:14.644 [main] INFO  resources.base - driver intialized for login test
+07.10.2018 20:19:20.428 [main] INFO  resources.base - home page open for long in test

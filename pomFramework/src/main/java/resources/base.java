@@ -19,7 +19,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class base {
 	
 	public static WebDriver driver;
-	public Properties prop;
+	public static Properties prop;
+
+	public base() {
+		
+	}
 
 	public WebDriver intializeDriver() throws IOException {
 		 prop = new Properties();
@@ -27,19 +31,21 @@ public class base {
 		FileInputStream fis = new FileInputStream("C:\\Users\\Faruq\\pomFramework\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 		String browserName= prop.getProperty("browser");
-		if (browserName.equals("chrome")) {
+		System.out.println(browserName);
+		
+		if (browserName.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDriver\\chromedriver_win32\\chromedriver.exe");
-	         driver = new ChromeDriver(); 
-	        
+			 driver = new ChromeDriver();
 		}
-		else if(browserName.equals("firefox")) {
+		else if(browserName.equalsIgnoreCase("firefox")) {
+			
 			System.setProperty("webdriver.gecko.driver", "C:\\SeleniumDriver\\geckodriver.exe");
 			 driver = new FirefoxDriver(); 	
 		}
-		else if (browserName.equals("edge")) {
+		else if (browserName.equalsIgnoreCase("edge")) {
 			System.setProperty("webdriver.edge.driver","C:\\SeleniumDriver\\MicrosoftWebDriver.exe");
 			 driver = new EdgeDriver();   	
-		}
+		}else {System.out.println("not a browser");}
 	
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)	;
 	return driver;
@@ -51,7 +57,7 @@ public class base {
 		
 		FileUtils.getFileExtension(src);
 		String File = "C://test//"+result+"screenshot.png";
-		String.valueOf(File);
+		//String.valueOf(File);
 		//FileUtils.copyFiles(src,new File("C://test//"+result+"screenshot.png"));
 	}
 	public void takeScreenShot() {

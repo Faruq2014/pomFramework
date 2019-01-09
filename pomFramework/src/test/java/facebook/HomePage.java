@@ -6,6 +6,7 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,13 +14,17 @@ import org.testng.annotations.Test;
 import resources.base;
 
 public class HomePage extends base{
-	 public static Logger log =LogManager.getLogger(base.class.getName());
+	 
+
+	public static Logger log =LogManager.getLogger(base.class.getName());
 	 
 	@BeforeTest
 	public void intialize() throws IOException {
 		driver=intializeDriver();
+		
 		driver.get(prop.getProperty("url"));
-		log.info("home page open and facebook open");
+		log.info("home page open and facebook open");	
+		
 	}
 	
 @Test
