@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10882" started-at="2018-07-13T23:38:27Z" finished-at="2018-07-13T23:38:37Z">
+  <suite name="Failed suite [Default suite]" duration-ms="15405" started-at="2019-05-13T22:42:35Z" finished-at="2019-05-13T22:42:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10882" started-at="2018-07-13T23:38:27Z" finished-at="2018-07-13T23:38:37Z">
+    <test name="Default test(failed)" duration-ms="15405" started-at="2019-05-13T22:42:35Z" finished-at="2019-05-13T22:42:50Z">
       <class name="facebook.HomePage">
-        <test-method status="PASS" signature="intialize()[pri:0, instance:facebook.HomePage@157853da]" name="intialize" is-config="true" duration-ms="8630" started-at="2018-07-13T19:38:27Z" finished-at="2018-07-13T19:38:35Z">
+        <test-method status="PASS" signature="intialize()[pri:0, instance:facebook.HomePage@5f16132a]" name="intialize" is-config="true" duration-ms="13041" started-at="2019-05-13T18:42:35Z" finished-at="2019-05-13T18:42:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialize -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:facebook.HomePage@157853da]" name="basePageNavigation" duration-ms="87" started-at="2018-07-13T19:38:35Z" finished-at="2018-07-13T19:38:35Z">
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:facebook.HomePage@5f16132a]" name="basePageNavigation" duration-ms="28" started-at="2019-05-13T18:42:48Z" finished-at="2019-05-13T18:42:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:facebook.HomePage@157853da]" name="teardown" is-config="true" duration-ms="2136" started-at="2018-07-13T19:38:35Z" finished-at="2018-07-13T19:38:37Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:facebook.HomePage@5f16132a]" name="teardown" is-config="true" duration-ms="2246" started-at="2019-05-13T18:42:48Z" finished-at="2019-05-13T18:42:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- facebook.HomePage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>

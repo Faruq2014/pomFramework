@@ -1,7 +1,7 @@
 
 
 Feature: Test facebook login credientials
-  I want to use this template for my feature file
+  as a user i want to login on facebook, so i can communicate with friends
 
  
   Scenario: Test login with valid credential

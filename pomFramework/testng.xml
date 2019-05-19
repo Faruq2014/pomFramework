@@ -28,4 +28,5 @@
       <class name="facebook.HomePage"/>
     </classes>
   </test> <!-- Test -->
+
 </suite> <!-- Suite -->
