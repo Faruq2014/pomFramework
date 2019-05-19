@@ -3,6 +3,8 @@ package com.interview.com.facebook;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import Utilities.BaseTest;
+
 public class LoginTest extends BaseTest{
 
 

@@ -1,4 +1,4 @@
-package com.interview.com.facebook;
+package resources;
 
 import org.openqa.selenium.WebDriver;
 

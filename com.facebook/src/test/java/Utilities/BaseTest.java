@@ -1,4 +1,4 @@
-package com.interview.com.facebook;
+package Utilities;
 
 import java.util.concurrent.TimeUnit;
 
