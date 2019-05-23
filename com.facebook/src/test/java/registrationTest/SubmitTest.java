@@ -1,5 +1,6 @@
 package registrationTest;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -14,10 +15,15 @@ public class SubmitTest extends BaseTest{
 	}
 	@Test
 	public void submitTest() {
-		SignUp sp = new SignUp(driver);
+		SignUp sp = new SignUp(driver, test);
 		sp.submit();
 		
 
+	}
+	
+	@AfterTest
+	public void finishTest() {
+		driver.quit();
 	}
 
 }

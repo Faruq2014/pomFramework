@@ -1,5 +1,6 @@
 package registrationTest;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,14 @@ public class PasswordTest extends BaseTest{
 	}
 	@Test
 	public void passwordTest() {
-		SignUp sp = new SignUp(driver);
+		SignUp sp = new SignUp(driver, test);
 		sp.password("abc123");
 
+	}
+	
+	@AfterTest
+	public void finishTest() {
+		driver.quit();
 	}
 
 }

@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.logging.log4j.core.util.FileUtils;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -57,8 +57,8 @@ public class base {
 		
 		FileUtils.getFileExtension(src);
 		String File = "C://test//"+result+"screenshot.png";
-		//String.valueOf(File);
-		//FileUtils.copyFiles(src,new File("C://test//"+result+"screenshot.png"));
+		String.valueOf(File);
+		FileUtils.copyFiles(src,new File("C://test//"+result+"screenshot.png"));
 	}
 	public void takeScreenShot() {
 		Date d = new Date();

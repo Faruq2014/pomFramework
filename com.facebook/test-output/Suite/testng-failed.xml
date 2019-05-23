@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="registrationTest.SubmitTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="finishTest"/>
+          <include name="submitTest"/>
+        </methods>
+      </class> <!-- registrationTest.SubmitTest -->
+      <class name="registrationTest.FirstAndLastNameTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="FirstNameTest"/>
+          <include name="finishTest"/>
+        </methods>
+      </class> <!-- registrationTest.FirstAndLastNameTest -->
+      <class name="registrationTest.MaleOrFemale">
+        <methods>
+          <include name="birthdayTest"/>
+          <include name="openBrowser"/>
+          <include name="finishTest"/>
+        </methods>
+      </class> <!-- registrationTest.MaleOrFemale -->
+      <class name="registrationTest.PasswordTest">
+        <methods>
+          <include name="passwordTest"/>
+          <include name="finishTest"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- registrationTest.PasswordTest -->
+      <class name="registrationTest.BirthdayTest">
+        <methods>
+          <include name="birthdayTest"/>
+          <include name="finishTest"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- registrationTest.BirthdayTest -->
+      <class name="com.interview.com.facebook.ValidateTest">
+        <methods>
+          <include name="finishTest"/>
+          <include name="openBrowser"/>
+          <include name="validateFBTest"/>
+          <include name="assertTest"/>
+          <include name="displayTest"/>
+        </methods>
+      </class> <!-- com.interview.com.facebook.ValidateTest -->
+      <class name="registrationTest.MobileNumberTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="mobilenumberTest"/>
+          <include name="finishTest"/>
+        </methods>
+      </class> <!-- registrationTest.MobileNumberTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

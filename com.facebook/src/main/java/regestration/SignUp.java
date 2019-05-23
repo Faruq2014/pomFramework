@@ -5,18 +5,23 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import com.relevantcodes.extentreports.ExtentTest;
+
 import resources.BasePage;
 
 public class SignUp extends BasePage{
 	
-	public SignUp(WebDriver driver) {
-	super(driver);	
+	public SignUp(WebDriver driver, ExtentTest test) {
+	super(driver, test);	
 	//this.driver = driver;
 	}
 	
 	
 	public void firstName(String firstname) {
 		driver.findElement(By.id("u_0_c")).sendKeys(firstname);
+		
+		// to fail the test case
+		//driver.findElement(By.id("_0_c")).sendKeys(firstname);
 	}
 	
 	public void lasttName(String lastname) {
@@ -32,21 +37,23 @@ public class SignUp extends BasePage{
 		driver.findElement(By.id("u_0_o")).sendKeys(pword);
 	}
 	
-	public void birthmonth() {
+	public void birthmonth(int birthmonth) {
 		WebElement element=	driver.findElement(By.xpath("//*[@name='birthday_month']"));
 		Select select = new Select(element);
-		select.selectByIndex(5);
+		select.selectByIndex(birthmonth);
 			}
-		public void birthday() {
+		public void birthday(int birthday) {
 			WebElement element = driver.findElement(By.xpath("//*[@name='birthday_day']"));
+			//to fail the test case
+			//WebElement element = driver.findElement(By.xpath("//*[@='birthday_day']"));
 			Select select = new Select(element);
-			select.selectByIndex(22);
+			select.selectByIndex(birthday);
 		}
 
-		public void birtyear() {
+		public void birthyear(String birthyear) {
 			WebElement element = driver.findElement(By.xpath("//*[@name='birthday_year']"));
 			Select select = new Select(element);
-			select.selectByValue("2000");
+			select.selectByValue(birthyear);
 		}
 		public void male() {
 			Boolean male=driver.findElement(By.xpath("(//*[@name='sex'])[2]")).isSelected();

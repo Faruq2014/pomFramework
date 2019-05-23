@@ -1,5 +1,6 @@
 package com.interview.com.facebook;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,28 @@ public class ValidateTest extends BaseTest{
 	
 	@Test
 	public void validateFBTest() {
-		LoginValidate lv = new LoginValidate(driver);
+		test = extent.startTest("validateFBTest");
+		LoginValidate lv = new LoginValidate(driver, test);
 		lv.Test();
+	}
+	@Test
+	public void displayTest() {
+		test = extent.startTest("displayTest");
+		LoginValidate lv = new LoginValidate(driver, test);
 		lv.Display();
+	}
+	
+	@Test
+	public void assertTest() {
+		test = extent.startTest("assertTest");
+		LoginValidate lv = new LoginValidate(driver,test);
+		lv.assertation();
+	}
+	
+	
+	@AfterTest
+	public void finishTest() {
+		driver.quit();
 	}
 
 

@@ -5,13 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import com.relevantcodes.extentreports.ExtentTest;
+
 import resources.BasePage;
 
 
 public class LoginPage extends BasePage {
 
-	public LoginPage(WebDriver driver) {
-		super(driver);
+	public LoginPage(WebDriver driver, ExtentTest test) {
+		super(driver,test);
 		
 	}
 	public void username(String username) {
@@ -24,6 +26,7 @@ public class LoginPage extends BasePage {
 	}
 	
 public WebElement login() {
+
 	return driver.findElement(By.xpath("( //input[starts-with(@id,'u_0')])[1]"));
 }
 public void firstname(String fname) {

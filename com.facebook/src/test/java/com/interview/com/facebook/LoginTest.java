@@ -1,5 +1,6 @@
 package com.interview.com.facebook;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,9 @@ public class LoginTest extends BaseTest{
 	
 	@Test
 	public void loginTest() {
-		LoginPage fb = new LoginPage(driver);
+		test = extent.startTest("LoginTest");
+		
+		LoginPage fb = new LoginPage(driver,test);
 		fb.username("abc@yahoo.com");
 		fb.password("avz123");
 		//fb.login().click();
@@ -28,6 +31,11 @@ public class LoginTest extends BaseTest{
 		fb.male();
 		fb.submit();
 		fb.createApage();
+	}
+	
+	@AfterTest
+	public void finishTest() {
+		driver.quit();
 	}
 
 }

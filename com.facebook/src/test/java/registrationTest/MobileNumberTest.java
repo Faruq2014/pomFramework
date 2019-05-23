@@ -1,5 +1,6 @@
 package registrationTest;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -14,9 +15,13 @@ public class MobileNumberTest extends BaseTest{
 	}
 	@Test
 	public void mobilenumberTest() {
-		SignUp sp = new SignUp(driver);
+		SignUp sp = new SignUp(driver, test);
 		sp.mobileNumber("2223334444");
 
+	}
+	@AfterTest
+	public void finishTest() {
+		driver.quit();
 	}
 
 }

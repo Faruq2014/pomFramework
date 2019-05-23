@@ -18,7 +18,7 @@ public class ValidateTitleTest extends base{
 	 
 	@BeforeTest 
 	public void intialize() throws IOException {
-		driver=intializeDriver();
+		intializeDriver();
 		log.info("driver is intialized for validation title page");
 		driver.get(prop.getProperty("url"));
 		
