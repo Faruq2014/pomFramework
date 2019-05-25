@@ -1,7 +1,7 @@
-05.22.2019 17:25:30.700 [main] INFO  resources.BasePage - writing birthday
-05.22.2019 17:42:56.235 [main] INFO  resources.BasePage - opening facebook
-05.22.2019 17:42:57.373 [main] INFO  resources.BasePage - writing birthday
-05.22.2019 17:50:36.375 [main] INFO  resources.BasePage - opening facebook
-05.22.2019 17:50:38.176 [main] INFO  resources.BasePage - writing birthday
-05.22.2019 17:52:47.844 [main] INFO  resources.BasePage - opening facebook
-05.22.2019 17:57:12.132 [main] INFO  resources.BasePage - opening facebook
+05.23.2019 16:25:22.007 [main] INFO  resources.BasePage - opening browser
+05.23.2019 16:25:22.744 [main] INFO  resources.BasePage - writing first name
+05.23.2019 16:25:22.875 [main] INFO  resources.BasePage - writing last name
+05.23.2019 16:25:52.256 [main] INFO  resources.BasePage - opening facebook
+05.23.2019 16:30:47.633 [main] INFO  resources.BasePage - opening browser
+05.23.2019 16:30:47.843 [main] INFO  resources.BasePage - writing first name
+05.23.2019 16:30:47.996 [main] INFO  resources.BasePage - writing last name

@@ -7,6 +7,7 @@ import org.testng.ITestResult;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class Listeners implements ITestListener {
+	
 	BaseTest b = new BaseTest();
 	
 	public void onFinish(ITestContext context) {

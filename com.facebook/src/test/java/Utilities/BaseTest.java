@@ -27,6 +27,7 @@ public class BaseTest {
 	public static ExtentTest test;
 	
 	public static Logger log =LogManager.getLogger(BasePage.class.getName());
+	
 	public static WebDriver driver;
 	
 	public static void init(String bType){

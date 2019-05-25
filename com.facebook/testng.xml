@@ -13,11 +13,39 @@
        </classes>
   </test> <!-- Name -->
   
- 
-  
-   <test name="BirthdayTest">
+ <test name="NameTest">
     <classes>
- <class name="registrationTest.BirthdayTest"/>
+    <class name="registrationTest.FirstAndLastNameTest"/>
+       </classes>
+  </test> <!-- Registration -->
+  
+  <test name="Mobile Number Test">
+    <classes>
+    <class name="registrationTest.MobileNumberTest"/>
+       </classes>
+  </test> <!-- Registration -->
+  
+  <test name="Password Test">
+    <classes>
+    <class name="registrationTest.PasswordTest"/>
+       </classes>
+  </test> <!-- Registration -->
+  
+  <test name="BirthdayTest">
+    <classes>
+    <class name="registrationTest.BirthdayTest"/>
+       </classes>
+  </test> <!-- Registration -->
+  
+  <test name="Male and Female Test">
+    <classes>
+    <class name="registrationTest.MaleOrFemale"/>
+       </classes>
+  </test> <!-- Registration -->
+  
+  <test name="Submit Test">
+    <classes>
+    <class name="registrationTest.SubmitTest"/>
        </classes>
   </test> <!-- Registration -->
   

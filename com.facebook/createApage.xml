@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login1">
+
+<listeners>
+<listener class-name="Utilities.Listeners"/>
+</listeners>
+
+  <test thread-count="5" name="create a page">
+    <classes>
+      <class name="createApage.createApageTest"/>
+    </classes>
+  </test> <!-- create a page -->
+</suite> <!-- Login1 -->

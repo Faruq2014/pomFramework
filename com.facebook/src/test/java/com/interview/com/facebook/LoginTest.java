@@ -33,9 +33,10 @@ public class LoginTest extends BaseTest{
 		fb.createApage();
 	}
 	
-	@AfterTest
+	/*@AfterTest
 	public void finishTest() {
 		driver.quit();
 	}
+	*/
 
 }

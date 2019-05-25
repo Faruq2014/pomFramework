@@ -4,17 +4,26 @@
   <listeners>
     <listener class-name="Utilities.Listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Regration Test(failed)">
+  <test thread-count="5" verbose="0" name="LoginTest(failed)">
     <classes>
-      <class name="registrationTest.RegistrationPageTest">
+      <class name="com.interview.com.facebook.LoginTest">
         <methods>
+          <include name="loginTest"/>
+          <include name="openBrowser"/>
           <include name="finishTest"/>
-          <include name="firstAndLastNameTest"/>
-          <include name="passwordTest"/>
-          <include name="mobileNumberTest"/>
+        </methods>
+      </class> <!-- com.interview.com.facebook.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test thread-count="5" verbose="0" name="BirthdayTest(failed)">
+    <classes>
+      <class name="registrationTest.BirthdayTest">
+        <methods>
+          <include name="birthdayTest"/>
+          <include name="finishTest"/>
           <include name="openBrowser"/>
         </methods>
-      </class> <!-- registrationTest.RegistrationPageTest -->
+      </class> <!-- registrationTest.BirthdayTest -->
     </classes>
-  </test> <!-- Regration Test(failed) -->
+  </test> <!-- BirthdayTest(failed) -->
 </suite> <!-- Failed suite [Signup] -->
